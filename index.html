@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/57b9706a52.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -33,7 +33,7 @@
     <section id="home" class="home-section">
         <div class="home-section-container">
             <div class="home-text-container">
-                <p class="home-text-name">Simon Kutsche</p>
+                <p class="home-text-name"><a href="#about">Simon Kutsche</a></p>
                 <p class="home-text-job">Machine Learning Engineer</p>
             </div>
         </div>
@@ -41,8 +41,8 @@
 
     <section id="about">
         <div class="about-section-container">
-            <div class="about-text-container">
-                <p class="section-headline">About</p>
+            <div class="section-text-container">
+                <p class="section-headline"><a href="#about">About</a></p>
             </div>
         <div class="about-section">
             <h2>Professional</h2>
@@ -74,8 +74,8 @@
 
     <section id="experience" class="experience-section">
         <div class="experience-section-container">
-            <div class="experience-text-container">
-                <p class="section-headline">Experience</p>
+            <div class="section-text-container">
+                <p class="section-headline"><a href="#experience">Experience</a></p>
             </div>
 
             <div class="experience-item-container">
@@ -141,8 +141,8 @@
 
     <section id="projects" class="projects-section">
         <div class="projects-section-container">
-            <div class="projects-text-container">
-                <p class="section-headline">Projects</p>
+            <div class="section-text-container">
+                <p class="section-headline"><a href="#projects">Projects</a></p>
             </div>
 
             <div class="projects-item-container">
@@ -178,10 +178,10 @@
 
         </div>
 
-    <section id="education-section">
+    <section id="education" class="education-section">
         <div class="education-section-container">
-            <div class="education-text-container">
-                <p class="section-headline">Education</p>
+            <div class="section-text-container">
+                <p class="section-headline"><a href="#education">Education</a></p>
             </div>
         
             <div class="education-item">
@@ -213,8 +213,28 @@
 
     <section id="contact" class="contact-section">
         <div class="container">
-            <h2>Contact</h2>
-            <!-- Your contact content goes here -->
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> simon.kutsche@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 017643831557</p>
+                    <div class="social-icons">
+                        <a href="https://www.github.com/Simon1307"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/simon-kutsche/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="assets/resume.pdf" class="btn btn2">Download Resume</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -223,6 +243,26 @@
     </footer>
 
     <script src="scripts/script.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyeBA6ExOOlVMSnddkoP1FY0-b77JItBneU3MJ7xPhDkvRrtP6AVD43ptk9SBm9pKzd/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()  
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
 </body>
 
 </html>
