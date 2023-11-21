@@ -16,6 +16,11 @@ body {
     height: 60px;
     z-index: 100;
     background-color: rgba(255, 255, 255, 0);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.header-solid {
+    background-color: rgba(189, 189, 189, 0.815);
 }
 
 .header-right-section {
@@ -99,7 +104,7 @@ body {
     color: #333;
 }
 
-.experience-text-container, .about-text-container, .projects-text-container {
+.experience-text-container, .about-text-container, .projects-text-container, .education-text-container {
     background-color: gray;
     height: 120px;
     display: flex;
@@ -164,9 +169,54 @@ body {
 }
 
 
+
+
+.education-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.education-item img {
+    width: 300px; /* Adjust the size of the logo as needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin-right: 20px;
+}
+
+.education-details {
+    text-align: left;
+}
+
+.education-details h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.education-details p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 .contact-section {
     padding-bottom: 100px;
 }
+
+
+
+
+
+
+
 
 footer {
     background-color: #333;
