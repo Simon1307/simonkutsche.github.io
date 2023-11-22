@@ -322,13 +322,20 @@
     <script src="scripts/script.js"></script>
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyeBA6ExOOlVMSnddkoP1FY0-b77JItBneU3MJ7xPhDkvRrtP6AVD43ptk9SBm9pKzd/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwA8_m-VdiyuTkQuEgENd5zNczg7N9yzeIMm86sKMtMw0tw0Kbx6KOx1Ko-54c5krAR/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
 
         form.addEventListener('submit', e => {
           e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          fetch(scriptURL, {
+              method: 'POST',
+              body: new FormData(form),
+              /*mode: 'cors',
+              headers: {
+                  'Content-Type': 'application/x-www-form-urlencoded'
+                },          */
+            })
             .then(response => {
                 msg.innerHTML = "Message sent successfully"
                 setTimeout(function(){
