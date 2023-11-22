@@ -196,8 +196,6 @@ body {
 }
 
 
-
-
 .education-item {
     display: flex;
     align-items: center;
@@ -226,6 +224,45 @@ body {
 
 .education-details p {
     margin: 0;
+}
+
+
+
+
+.skills-section {
+    padding: 50px 20px 50px 20px;
+}
+
+.skills-grid {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.skill-item {
+    text-align: center;
+}
+
+.skill-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.skill-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.skill-item ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-item li {
+    margin-bottom: 5px;
 }
 
 
