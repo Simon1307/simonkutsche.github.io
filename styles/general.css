@@ -205,6 +205,10 @@ body {
     margin: 20px 0;
 }
 
+.education-item:last-child {
+    margin-top: 50px;
+}
+
 .education-item img {
     width: 300px; /* Adjust the size of the logo as needed */
     height: auto; /* Maintain the aspect ratio */
@@ -228,28 +232,39 @@ body {
 
 .contact-section {
     padding-bottom: 100px;
+    background-color: #494949;
+}
+
+.contact-left, .contact-right {
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
 }
 
 .contact-left {
-    flex-basis: 35%;
+    width: 30%;
+    margin-left: 250px;
 }
 
 .contact-right {
-    flex-basis: 60%;
+    width: 40%;
+    margin-top: 60px;
+    margin-right: 150px;
 }
 
-.contact-left p {
-    margin-top: 30px;
+.contact-headline {
+    font-size: 50px;
 }
 
 .contact-left p i {
-    color: #ff004f;
-    margin-right: 15px;
+    color: #2e2d30;
+    margin-right: 7px;
     font-size: 25px;
 }
 
 .social-icons {
     margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 .social-icons a {
@@ -262,13 +277,8 @@ body {
 }
 
 .social-icons a:hover {
-    color: #ff004f;
+    color: #2e2d30;
     transform: translateY(-5px);
-}
-
-.btn.btn2 {
-    display: inline-block;
-    background: #ff004f;
 }
 
 .contact-right form {
@@ -287,11 +297,21 @@ form input, form textarea {
     border-radius: 6px;
 }
 
-form .btn2 {
+.button, .download-resume-button a {
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+    display: inline-block;
+    color: #2e2d30;
+    transition: opacity 0.2s ease-in-out;
+    background-color: #fff;
+    text-decoration: none;
+    font-family: Roboto, Arial;
+}
+
+.button:hover, .download-resume-button a:hover {
+    opacity: 0.7;
 }
 
 #msg {
@@ -301,7 +321,7 @@ form .btn2 {
 }
 
 footer {
-    background-color: #333;
+    background-color: #2e2d30;
     color: #fff;
     text-align: center;
     padding: 10px 0;
