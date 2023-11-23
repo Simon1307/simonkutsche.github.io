@@ -1,0 +1,42 @@
+.education-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.education-item:last-child {
+    margin-top: 50px;
+}
+
+.education-item img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.education-details {
+    text-align: left;
+}
+
+.education-details h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.education-details p {
+    margin: 0;
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1500px) {
+
+    .education-item img {
+        width: 240px;
+    }
+    
+    .education-details h3 {
+        font-size: 1.2em;
+    }
+
+}
