@@ -33,3 +33,15 @@
 .skill-item li {
     margin-bottom: 5px;
 }
+
+
+@media only screen and (min-width: 800px) and (max-width: 999px) {
+
+    .skill-item h3 {
+        font-size: 1.1em;
+    }
+
+    .skill-item li {
+        font-size: 0.7em;
+    }
+}

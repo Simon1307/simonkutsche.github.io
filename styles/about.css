@@ -27,3 +27,47 @@
 .about-section h3 h2{
     color: #333;
 }
+
+@media only screen and (min-width: 800px) and (max-width: 999px) {
+    .about-section h2 {
+        font-size: 1.1em;
+    }
+
+    .about-section h3 {
+        font-size: 1.3em;
+    }
+
+    .about-section li {
+        font-size: 0.9em;
+    }
+
+    .about-section p {
+        font-size: 0.9em;
+    }
+
+    .about-section {
+        max-width: 600px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+    .about-section h2 {
+        font-size: 0.8em;
+    }
+
+    .about-section h3 {
+        font-size: 1em;
+    }
+
+    .about-section li {
+        font-size: 0.6em;
+    }
+
+    .about-section p {
+        font-size: 0.6em;
+    }
+
+    .about-section {
+        max-width: 400px;
+    }
+}

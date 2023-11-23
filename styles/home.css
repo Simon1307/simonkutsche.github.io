@@ -35,3 +35,14 @@
 .home-tex-job {
     font-size: 1.5em;
 }
+
+
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+    .home-text-name {
+        font-size: 1.5em;
+    }    
+
+    .home-text-job {
+        font-size: 0.8em;
+    }
+}
