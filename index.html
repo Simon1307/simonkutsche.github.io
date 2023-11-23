@@ -335,41 +335,6 @@
     </footer>
 
     <script src="scripts/script.js"></script>
-    
-    <script>
-        // Add the following script to your existing JavaScript file or in a <script> tag at the end of your body
-        function toggleMenu() {
-        const header = document.querySelector('.header');
-        header.classList.toggle('burger-menu-active');
-        }
-    </script>
-
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwA8_m-VdiyuTkQuEgENd5zNczg7N9yzeIMm86sKMtMw0tw0Kbx6KOx1Ko-54c5krAR/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, {
-              method: 'POST',
-              body: new FormData(form),
-              /*mode: 'cors',
-              headers: {
-                  'Content-Type': 'application/x-www-form-urlencoded'
-                },          */
-            })
-            .then(response => {
-                msg.innerHTML = "Message sent successfully"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                }, 5000)
-                form.reset()  
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
-
 </body>
 
 </html>

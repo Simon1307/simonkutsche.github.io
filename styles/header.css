@@ -86,7 +86,7 @@
         flex-direction: column;
         align-items: flex-end;
         position: absolute;
-        top: 60px; /* Adjust this value based on your header height */
+        top: 60px;
         right: 0;
         background-color: rgba(0, 0, 0, 0.8);
         width: 100%;
@@ -106,10 +106,5 @@
 
     .header-links {
         display: flex;
-        /* Add any other styles you want for larger screens */
-    }
-
-    .header {
-        /* Reset any styles that were modified for smaller screens */
     }
 }

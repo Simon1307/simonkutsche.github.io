@@ -60,10 +60,10 @@
     }
 
     .skill-item h3 {
-        font-size: 1em; /* Adjust font size for better visibility */
+        font-size: 1em;
     }
 
     .skill-item li {
-        font-size: 0.6em; /* Adjust font size for better visibility */
+        font-size: 0.6em;
     }
 }
