@@ -94,4 +94,38 @@ form input, form textarea {
         font-size: 15px;
     }
 
+    .contact-right {
+        margin-right: 150px;
+    }
+
+    .contact-left {
+        margin-left: 95px;
+    }
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 999px) {
+
+    .button, .download-resume-button a {
+        font-size: 12px;
+    }
+
+    .contact-right {
+        margin-left: 30px;
+        margin-right: 50px;
+    }
+
+    .contact-left {
+        margin-left: 50px;
+        margin-right: 30px;
+    }
+
+
+    .contact-headline {
+        font-size: 35px;
+    }
+
+    .contact-grid {
+        grid-gap: 0px;
+    }
 }
