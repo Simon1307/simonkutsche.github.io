@@ -67,3 +67,18 @@
         font-size: 0.6em;
     }
 }
+
+@media only screen and (min-width: 250px) and (max-width: 359px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .skill-item h3 {
+        font-size: 0.6em;
+    }
+
+    .skill-item li {
+        font-size: 0.3em;
+    }
+}

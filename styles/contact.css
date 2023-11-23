@@ -244,3 +244,61 @@ form input, form textarea {
     }
 }
 
+@media only screen and (min-width: 250px) and (max-width: 359px) {
+    .contact-section {
+        padding-bottom: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 15px;
+    }
+
+    .contact-left,
+    .contact-right {
+        margin: 0;
+    }
+
+    .contact-headline {
+        font-size: 20px;
+    }
+
+    .contact-left p i {
+        font-size: 9px;
+    }
+
+    .contact-left p {
+        font-size: 9px;
+    }
+
+    .social-icons {
+        margin-top: 12px;
+        margin-bottom: 8px;
+    }
+
+    .social-icons a {
+        font-size: 15px;
+        margin-right: 8px;
+    }
+
+    .contact-right form {
+        width: 80%;
+    }
+
+    form input,
+    form textarea {
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 10px;
+    }
+
+    .button,
+    .download-resume-button a {
+        padding: 10px 40px;
+        font-size: 10px;
+        margin-top: 15px;
+    }
+}

@@ -186,3 +186,34 @@ footer {
     }
 
 }
+
+@media only screen and (min-width: 250px) and (max-width: 359px) {
+    .section-headline {
+        font-size: 0.7em;
+    }
+
+    .section-text-container {
+        height: 35px;
+    }
+
+    .item-container {
+        padding-right: 10px;
+    }
+    
+    .item-img {
+            max-width: 80px;
+    }
+
+    .details-a {
+        font-size: 7px;
+    }
+
+    .details-description {
+        font-size: 5px;
+    }
+
+    footer {
+        font-size: 0.5em;
+    }
+
+}
