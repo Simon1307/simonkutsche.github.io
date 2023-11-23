@@ -45,3 +45,13 @@
         font-size: 0.8em;
     }
 }
+
+@media only screen and (min-width: 360px) and (max-width: 599px) {
+    .home-text-name {
+        font-size: 1.3em;
+    }    
+
+    .home-text-job {
+        font-size: 0.7em;
+    }
+}

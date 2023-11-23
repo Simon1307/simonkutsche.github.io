@@ -71,3 +71,25 @@
         max-width: 400px;
     }
 }
+
+@media only screen and (min-width: 360px) and (max-width: 599px) {
+    .about-section h2 {
+        font-size: 0.6em;
+    }
+
+    .about-section h3 {
+        font-size: 0.8em;
+    }
+
+    .about-section li {
+        font-size: 0.4em;
+    }
+
+    .about-section p {
+        font-size: 0.4em;
+    }
+
+    .about-section {
+        max-width: 280px;
+    }
+}

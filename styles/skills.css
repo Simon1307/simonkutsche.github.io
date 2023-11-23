@@ -1,9 +1,5 @@
-.skills-section {
-    padding: 50px 20px 50px 20px;
-}
-
 .skills-grid {
-    padding-top: 30px;
+    padding: 50px 20px 50px 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
@@ -54,5 +50,20 @@
 
     .skill-item li {
         font-size: 0.55em;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 599px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .skill-item h3 {
+        font-size: 1em; /* Adjust font size for better visibility */
+    }
+
+    .skill-item li {
+        font-size: 0.6em; /* Adjust font size for better visibility */
     }
 }

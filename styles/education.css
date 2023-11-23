@@ -63,3 +63,17 @@
         font-size: 0.7em;
     }
 }
+
+@media only screen and (min-width: 360px) and (max-width: 599px) {
+    .education-item img {
+        width: 90px;
+    }
+    
+    .education-details h3 {
+        font-size: 0.5em;
+    }
+
+    .education-details p {
+        font-size: 0.5em;
+    }
+}
