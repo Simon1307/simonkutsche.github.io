@@ -136,4 +136,21 @@ footer {
     .section-text-container {
         height: 70px;
     }
+
+    .item-container {
+        padding-right: 50px;
+    }
+    
+    .item-img {
+            max-width: 230px;
+    }
+
+    .details-a {
+        font-size: 15px;
+    }
+
+    .details-description {
+        font-size: 10px;
+    }
+
 }

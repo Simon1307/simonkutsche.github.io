@@ -129,3 +129,59 @@ form input, form textarea {
         grid-gap: 0px;
     }
 }
+
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+    .contact-section {
+        padding-bottom: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 20px;
+    }
+
+    .contact-left,
+    .contact-right {
+        margin: 0;
+    }
+
+    .contact-headline {
+        font-size: 30px;
+    }
+
+    .contact-left p i {
+        font-size: 16px;
+    }
+
+    .social-icons {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    .contact-right form {
+        width: 90%;
+    }
+
+    form input,
+    form textarea {
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .button,
+    .download-resume-button a {
+        padding: 10px 40px;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+}
+

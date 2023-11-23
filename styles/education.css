@@ -28,7 +28,6 @@
     margin: 0;
 }
 
-
 @media only screen and (min-width: 1000px) and (max-width: 1500px) {
 
     .education-item img {
@@ -41,7 +40,6 @@
 
 }
 
-
 @media only screen and (min-width: 800px) and (max-width: 999px) {
     .education-item img {
         width: 200px;
@@ -49,5 +47,19 @@
     
     .education-details h3 {
         font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+    .education-item img {
+        width: 160px;
+    }
+    
+    .education-details h3 {
+        font-size: 0.7em;
+    }
+
+    .education-details p {
+        font-size: 0.7em;
     }
 }
