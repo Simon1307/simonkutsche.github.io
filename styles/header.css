@@ -39,3 +39,73 @@
 .header div:last-child {
     margin-right: 20px;
 }
+
+
+/* Your existing styles for larger screens */
+
+@media only screen and (max-width: 899px) {
+    /* Styles for screens between 600px and 899px */
+
+    .header {
+        /* Adjust styles for the header on smaller screens, if necessary */
+    }
+
+    .burger-menu-icon {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .burger-menu-active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .burger-menu-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-menu-active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .header-links {
+        display: none;
+    }
+
+    .burger-menu-active .header-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        top: 60px; /* Adjust this value based on your header height */
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Reset styles for screens larger than 900px */
+@media only screen and (min-width: 900px) {
+    .burger-menu-icon {
+        display: none;
+    }
+
+    .header-links {
+        display: flex;
+        /* Add any other styles you want for larger screens */
+    }
+
+    .header {
+        /* Reset any styles that were modified for smaller screens */
+    }
+}
