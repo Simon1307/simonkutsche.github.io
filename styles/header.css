@@ -40,14 +40,14 @@
     margin-right: 20px;
 }
 
-
-/* Your existing styles for larger screens */
-
 @media only screen and (max-width: 899px) {
-    /* Styles for screens between 600px and 899px */
 
     .header {
-        /* Adjust styles for the header on smaller screens, if necessary */
+        background-color: transparent;
+    }
+
+    .header div:last-child {
+        margin-right: 0;
     }
 
     .burger-menu-icon {
@@ -91,6 +91,10 @@
         background-color: rgba(0, 0, 0, 0.8);
         width: 100%;
         padding: 10px;
+    }
+
+    .header-links a {
+        margin-bottom: 10px;
     }
 }
 
