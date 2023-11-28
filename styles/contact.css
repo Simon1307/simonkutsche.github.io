@@ -61,6 +61,7 @@ form input, form textarea {
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
+    font-family: Roboto, Arial;
 }
 
 .button, .download-resume-button a {
